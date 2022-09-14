@@ -1,0 +1,862 @@
+{
+	"info": {
+		"_postman_id": "372db4c7-10a8-4995-8e95-99a0ee22de43",
+		"name": "AGMC DAY 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19148174"
+	},
+	"item": [
+		{
+			"name": "books",
+			"item": [
+				{
+					"name": "v1GetBooks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/books",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - v1GetBooks",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/books",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:33:34 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"author\": \"Chinua Achebe\",\n            \"country\": \"Nigeria\",\n            \"imageLink\": \"images/things-fall-apart.jpg\",\n            \"language\": \"English\",\n            \"link\": \"https://en.wikipedia.org/wiki/Things_Fall_Apart\\n\",\n            \"pages\": 209,\n            \"title\": \"Things Fall Apart\",\n            \"year\": 1958\n        },\n        {\n            \"id\": 2,\n            \"author\": \"Hans Christian Andersen\",\n            \"country\": \"Denmark\",\n            \"imageLink\": \"images/fairy-tales.jpg\",\n            \"language\": \"Danish\",\n            \"link\": \"https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\\n\",\n            \"pages\": 784,\n            \"title\": \"Fairy tales\",\n            \"year\": 1836\n        },\n        {\n            \"id\": 3,\n            \"author\": \"Dante Alighieri\",\n            \"country\": \"Italy\",\n            \"imageLink\": \"images/the-divine-comedy.jpg\",\n            \"language\": \"Italian\",\n            \"link\": \"https://en.wikipedia.org/wiki/Divine_Comedy\\n\",\n            \"pages\": 928,\n            \"title\": \"The Divine Comedy\",\n            \"year\": 1315\n        },\n        {\n            \"id\": 4,\n            \"author\": \"Unknown\",\n            \"country\": \"Sumer and Akkadian Empire\",\n            \"imageLink\": \"images/the-epic-of-gilgamesh.jpg\",\n            \"language\": \"Akkadian\",\n            \"link\": \"https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\\n\",\n            \"pages\": 160,\n            \"title\": \"The Epic Of Gilgamesh\",\n            \"year\": -1700\n        },\n        {\n            \"id\": 5,\n            \"author\": \"Unknown\",\n            \"country\": \"Achaemenid Empire\",\n            \"imageLink\": \"images/the-book-of-job.jpg\",\n            \"language\": \"Hebrew\",\n            \"link\": \"https://en.wikipedia.org/wiki/Book_of_Job\\n\",\n            \"pages\": 176,\n            \"title\": \"The Book Of Job\",\n            \"year\": -600\n        },\n        {\n            \"id\": 6,\n            \"author\": \"Unknown\",\n            \"country\": \"India/Iran/Iraq/Egypt/Tajikistan\",\n            \"imageLink\": \"images/one-thousand-and-one-nights.jpg\",\n            \"language\": \"Arabic\",\n            \"link\": \"https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\\n\",\n            \"pages\": 288,\n            \"title\": \"One Thousand and One Nights\",\n            \"year\": 1200\n        },\n        {\n            \"id\": 7,\n            \"author\": \"Unknown\",\n            \"country\": \"Iceland\",\n            \"imageLink\": \"images/njals-saga.jpg\",\n            \"language\": \"Old Norse\",\n            \"link\": \"https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga\\n\",\n            \"pages\": 384,\n            \"title\": \"Njál's Saga\",\n            \"year\": 1350\n        },\n        {\n            \"id\": 8,\n            \"author\": \"Jane Austen\",\n            \"country\": \"United Kingdom\",\n            \"imageLink\": \"images/pride-and-prejudice.jpg\",\n            \"language\": \"English\",\n            \"link\": \"https://en.wikipedia.org/wiki/Pride_and_Prejudice\\n\",\n            \"pages\": 226,\n            \"title\": \"Pride and Prejudice\",\n            \"year\": 1813\n        },\n        {\n            \"id\": 9,\n            \"author\": \"Honoré de Balzac\",\n            \"country\": \"France\",\n            \"imageLink\": \"images/le-pere-goriot.jpg\",\n            \"language\": \"French\",\n            \"link\": \"https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot\\n\",\n            \"pages\": 443,\n            \"title\": \"Le Père Goriot\",\n            \"year\": 1835\n        },\n        {\n            \"id\": 10,\n            \"author\": \"Samuel Beckett\",\n            \"country\": \"Republic of Ireland\",\n            \"imageLink\": \"images/molloy-malone-dies-the-unnamable.jpg\",\n            \"language\": \"French, English\",\n            \"link\": \"https://en.wikipedia.org/wiki/Molloy_(novel)\\n\",\n            \"pages\": 256,\n            \"title\": \"Molloy, Malone Dies, The Unnamable, the trilogy\",\n            \"year\": 1952\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "v1CreateBook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 11,\n    \"author\": \"Andrea Hirata\",\n    \"country\": \"Indonesia\",\n    \"imageLink\": \"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1489732961l/1362193._SY475_.jpg\",\n    \"language\": \"Indonesia\",\n    \"link\": \"https://www.goodreads.com/book/show/1362193.Laskar_Pelangi\",\n    \"pages\": 534,\n    \"title\": \"Laskar Pelangi\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/books",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - v1CreateBook",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 11,\n    \"author\": \"Andrea Hirata\",\n    \"country\": \"Indonesia\",\n    \"imageLink\": \"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1489732961l/1362193._SY475_.jpg\",\n    \"language\": \"Indonesia\",\n    \"link\": \"https://www.goodreads.com/book/show/1362193.Laskar_Pelangi\",\n    \"pages\": 534,\n    \"title\": \"Laskar Pelangi\",\n    \"year\": 2008\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/books",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:33:15 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "353"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": 11,\n        \"title\": \"Laskar Pelangi\",\n        \"author\": \"Andrea Hirata\",\n        \"country\": \"Indonesia\",\n        \"language\": \"Indonesia\",\n        \"pages\": 534,\n        \"imageLink\": \"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1489732961l/1362193._SY475_.jpg\",\n        \"link\": \"https://www.goodreads.com/book/show/1362193.Laskar_Pelangi\",\n        \"year\": 2008\n    }\n}"
+						},
+						{
+							"name": "400 - v1CreateBook",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"author\": \"Andrea Hirata\",\n    \"country\": \"Indonesia\",\n    \"imageLink\": \"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1489732961l/1362193._SY475_.jpg\",\n    \"language\": \"Indonesia\",\n    \"link\": \"https://www.goodreads.com/book/show/1362193.Laskar_Pelangi\",\n    \"pages\": 534,\n    \"title\": \"Laskar Pelangi\",\n    \"year\": 2008\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/books",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:35:52 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "125"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 400,\n    \"message\": \"Key: 'StoreBookRequest.Id' Error:Field validation for 'Id' failed on the 'required' tag\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "v1GetBookById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/books/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"books",
+								":id"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - v1GetBookById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/books/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books",
+										":id"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:36:32 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "297"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": 2,\n        \"author\": \"Hans Christian Andersen\",\n        \"country\": \"Denmark\",\n        \"imageLink\": \"images/fairy-tales.jpg\",\n        \"language\": \"Danish\",\n        \"link\": \"https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\\n\",\n        \"pages\": 784,\n        \"title\": \"Fairy tales\",\n        \"year\": 1836\n    }\n}"
+						},
+						{
+							"name": "404 - v1GetBookById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/books/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books",
+										":id"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "21"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:36:47 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "53"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"book not found \",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "v1UpdateBookById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"author\": \"Andrea Hirata\",\n    \"country\": \"Indonesia\",\n    \"imageLink\": \"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1489732961l/1362193._SY475_.jpg\",\n    \"language\": \"Indonesia\",\n    \"link\": \"https://www.goodreads.com/book/show/1362193.Laskar_Pelangi\",\n    \"pages\": 534,\n    \"title\": \"Laskar Pelangi\",\n    \"year\": 2008\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/books/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"books",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - v1UpdateBookById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"author\": \"Andrea Hirata\",\n    \"country\": \"Indonesia\",\n    \"imageLink\": \"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1489732961l/1362193._SY475_.jpg\",\n    \"language\": \"Indonesia\",\n    \"link\": \"https://www.goodreads.com/book/show/1362193.Laskar_Pelangi\",\n    \"pages\": 534,\n    \"title\": \"Laskar Pelangi\",\n    \"year\": 2008\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/books/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:37:21 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "352"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": 2,\n        \"author\": \"Andrea Hirata\",\n        \"country\": \"Indonesia\",\n        \"imageLink\": \"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1489732961l/1362193._SY475_.jpg\",\n        \"language\": \"Indonesia\",\n        \"link\": \"https://www.goodreads.com/book/show/1362193.Laskar_Pelangi\",\n        \"pages\": 534,\n        \"title\": \"Laskar Pelangi\",\n        \"year\": 2008\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "v1DeleteBookById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/books/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"books",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - v1DeleteBookById",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/books/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:37:35 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "v1GetUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/users",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - v1GetUsers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/users",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:37:47 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "557"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"ID\": 2,\n            \"CreatedAt\": \"2022-09-14T16:41:11Z\",\n            \"UpdatedAt\": \"2022-09-14T16:41:12Z\",\n            \"DeletedAt\": null,\n            \"name\": \"Bayu Pratama\",\n            \"email\": \"bayu@gmail.com\",\n            \"password\": \"$2a$10$f1jNJdnu47votYfDnupFXupPya/lp.f9mn/DCAZjfRvUNIQMhBN1q\",\n            \"phone_number\": \"081242875660\",\n            \"status\": 1\n        },\n        {\n            \"ID\": 3,\n            \"CreatedAt\": \"2022-09-14T16:41:11Z\",\n            \"UpdatedAt\": \"2022-09-14T16:41:12Z\",\n            \"DeletedAt\": null,\n            \"name\": \"Siti Aisyah\",\n            \"email\": \"siti@gmail.com\",\n            \"password\": \"$2a$10$f1jNJdnu47votYfDnupFXupPya/lp.f9mn/DCAZjfRvUNIQMhBN1q\",\n            \"phone_number\": \"082244112311\",\n            \"status\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "v1CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"AGMC USER\",\r\n    \"email\": \"agmc@gmail.com\",\r\n    \"phone_number\": \"0812234567890\",\r\n    \"password\": \"123123\",\r\n    \"status\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/users",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - v1CreateUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"AGMC USER\",\r\n    \"email\": \"agmc@gmail.com\",\r\n    \"phone_number\": \"0812234567890\",\r\n    \"password\": \"123123\",\r\n    \"status\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/users",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:38:14 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "314"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"ID\": 9,\n        \"CreatedAt\": \"2022-09-14T19:38:14.423+08:00\",\n        \"UpdatedAt\": \"2022-09-14T19:38:14.423+08:00\",\n        \"DeletedAt\": null,\n        \"name\": \"AGMC USER\",\n        \"email\": \"agmc@gmail.com\",\n        \"password\": \"$2a$10$GOQOPlakOkyjZvygk1I28OyEfbYIt2u/Rd.lPXVpil0Fb4HtvYShW\",\n        \"phone_number\": \"0812234567890\",\n        \"status\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "v1GetUserById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/users/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - v1GetUserById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/users/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "9"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:38:30 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "304"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"ID\": 9,\n        \"CreatedAt\": \"2022-09-14T11:38:14.423Z\",\n        \"UpdatedAt\": \"2022-09-14T11:38:14.423Z\",\n        \"DeletedAt\": null,\n        \"name\": \"AGMC USER\",\n        \"email\": \"agmc@gmail.com\",\n        \"password\": \"$2a$10$GOQOPlakOkyjZvygk1I28OyEfbYIt2u/Rd.lPXVpil0Fb4HtvYShW\",\n        \"phone_number\": \"0812234567890\",\n        \"status\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "v1UpdateUserById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Andy AGMC\",\n    \"email\": \"andy.agmc@gmail.com\",\n    \"phone_number\": \"0851614317892\",\n    \"password\": \"qweasd123\",\n    \"status\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/users/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "v1UpdateUserById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Andy AGMC\",\n    \"email\": \"andy.agmc@gmail.com\",\n    \"phone_number\": \"0851614317892\",\n    \"password\": \"qweasd123\",\n    \"status\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/users/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "9"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:38:54 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "313"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"ID\": 9,\n        \"CreatedAt\": \"0001-01-01T00:00:00Z\",\n        \"UpdatedAt\": \"2022-09-14T19:38:54.648558+08:00\",\n        \"DeletedAt\": null,\n        \"name\": \"Andy AGMC\",\n        \"email\": \"andy.agmc@gmail.com\",\n        \"password\": \"$2a$10$17q0YSFQsdUsPx4wL6fPVu9TyoOrAOBTkzhfeyzd5m0wNxLybH6py\",\n        \"phone_number\": \"0851614317892\",\n        \"status\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "v1DeleteUserById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/users/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - v1DeleteUserById",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/users/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "9"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 11:39:11 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
